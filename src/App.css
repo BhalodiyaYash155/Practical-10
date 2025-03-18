@@ -1,0 +1,50 @@
+/* Apply full-screen styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Light theme styles */
+.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark theme styles */
+.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Button styling */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.light .theme-toggle {
+  background-color: #333;
+  color: white;
+}
+
+.dark .theme-toggle {
+  background-color: #f9d71c;
+  color: black;
+}
