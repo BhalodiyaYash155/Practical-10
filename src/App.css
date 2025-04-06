@@ -1,50 +1,83 @@
-/* Apply full-screen styles */
-html, body, #root {
-  height: 100%;
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #edf0f4;
+  color: #222;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
-/* Light theme styles */
-.light {
-  background-color: #ffffff;
-  color: #333;
+input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 1rem;
 }
 
-/* Dark theme styles */
-.dark {
-  background-color: #1e1e1e;
-  color: #ffffff;
-}
-
-/* Button styling */
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+button {
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.1);
-}
-
-.light .theme-toggle {
-  background-color: #333;
+  background-color: #222;
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
 }
 
-.dark .theme-toggle {
-  background-color: #f9d71c;
-  color: black;
+button:hover {
+  background-color: #444;
+}
+
+.weather-card {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.weather-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.weather-card h3 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #0077ff;
+}
+
+.weather-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
 }
