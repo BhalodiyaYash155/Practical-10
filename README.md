@@ -1,12 +1,66 @@
-# React + Vite
+# ⚛️ React Projects: Context API & useEffect Hook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains two beginner-to-intermediate level React projects that focus on mastering essential React concepts:
 
-Currently, two official plugins are available:
+- **Theme Switcher App** – Demonstrates how to manage global state using React’s Context API.
+- **Weather App** – Uses the `useEffect` hook to fetch and display live weather data from an API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎨 Theme Switcher App
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📚 Concepts Covered
+
+- Context API for global state management
+- Creating and using Context Providers and Consumers
+- Dynamically applying themes across components
+
+### 🎯 Objective
+
+Learn how to use React's Context API to manage and apply global theme state (light/dark mode) across multiple components.
+
+### ✅ Tasks
+
+- Set up a **ThemeContext** with `createContext` and `useContext`.
+- Implement a **ThemeProvider** to manage theme state.
+- Create a **toggle button** to switch between light and dark themes.
+- Apply conditional styles (background and text color) based on the current theme.
+
+---
+
+## ☁️ Weather App
+
+### 📚 Concepts Covered
+
+- Functional component lifecycle with `useEffect`
+- Performing side effects in React (API calls)
+- Handling user input and state updates
+
+### 🎯 Objective
+
+Understand and apply the `useEffect` hook to fetch weather data based on a user’s input city and dynamically update the UI.
+
+### ✅ Tasks
+
+- Create a form to accept a **city name** from the user.
+- Fetch weather data from [OpenWeatherMap API](https://openweathermap.org/api).
+- Display:
+  - City Name
+  - Temperature
+  - Weather Condition (e.g., "Cloudy", "Sunny")
+- Update the displayed data when the user searches a new city.
+
+---
+
+## 🛠️ Setup Instructions
+
+```bash
+# Clone the repository
+git clone "repo url"
+cd Practical 10
+
+# Install dependencies
+npm install
+
+# Start the Vite development server
+npm run dev
